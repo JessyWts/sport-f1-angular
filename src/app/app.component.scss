@@ -1,0 +1,39 @@
+/* app.component.scss ou dans la balise <style> */
+
+/* Conteneur global de l'application */
+.app-container {
+  /* Aligne les éléments enfants verticalement */
+  display: flex;
+  flex-direction: column;
+  /* Centre le contenu dans la largeur maximale */
+  align-items: center; 
+  width: 100%;
+  max-width: 1000px; /* Définir une largeur maximale pour que le centrage fonctionne */
+  margin: 0 auto; /* Centre le conteneur lui-même dans la page */
+  padding-top: 30px; /* Ajoute un peu d'espace en haut */
+}
+
+/* 1. Centrage du Titre et des Boutons (en haut) */
+.header-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centre les enfants (H1, P, mat-button-toggle-group) */
+  margin-bottom: 40px; /* Espace entre l'en-tête et le tableau */
+  text-align: center; /* Pour s'assurer que le texte est aussi centré */
+}
+
+/* 2. Centrage du Tableau (en dessous) */
+.table-section {
+  width: 100%; /* Le tableau prend la largeur maximale du conteneur (1000px) */
+  max-width: 100%;
+}
+
+/* Assurez-vous que le tableau Mat-table prend toute la largeur disponible */
+.mat-elevation-z8 {
+  width: 100%;
+  overflow-x: auto; /* Pour la réactivité, au cas où le tableau dépasse la largeur */
+}
+
+table {
+  width: 100%;
+}
